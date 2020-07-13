@@ -1,5 +1,5 @@
 # ubuntu-fat
-A convenient Docker-Image that contains ubuntu-latest and any packages I needed at least once.
+A convenient Docker-Image that contains ubuntu-latest and some packages I needed at least once as well as some convenience-scripts.
 ## Usage
 run `docker run -ti -v %cd%:/hostDirectory -v /var/run/docker.sock:/var/run/docker.sock -v ubuntu-root:/root ppuetsch/ubuntu-fat:latest`  
 On windows you can run `ubuntu.bat` from the cloned repository 
