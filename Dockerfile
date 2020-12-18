@@ -1,4 +1,6 @@
 FROM ubuntu:latest
+ENV TZ=UTC
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y vim binutils apt-transport-https ca-certificates curl wget gnupg-agent software-properties-common python3 iputils-ping iputils-tracepath openjdk-11-jdk maven man-db sendmail
